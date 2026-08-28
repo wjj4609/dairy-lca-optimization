@@ -1,0 +1,4 @@
+synthetic,group_id,stage_id,stage_category,feed_id,fresh_feed_kg_head_day,warning
+true,synthetic_group_001,synthetic_stage_001,lactating_cow,synthetic_feed_a,10,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.
+true,synthetic_group_001,synthetic_stage_001,lactating_cow,synthetic_feed_b,8,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.
+true,synthetic_group_001,synthetic_stage_001,lactating_cow,synthetic_feed_c,5,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.

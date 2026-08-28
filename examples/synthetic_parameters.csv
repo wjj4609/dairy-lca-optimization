@@ -1,0 +1,84 @@
+parameter_id,value,unit,citation,required_by,description
+energy.electricity_ghg_factor,1,kg CO2e/kWh,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,energy; field; manure,Electricity greenhouse-gas factor selected by the caller
+energy.coal_ghg_factor,1,kg CO2e/kg coal,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,energy,Coal greenhouse-gas factor
+energy.diesel_density_kg_l,1,kg/L,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,energy; feed production; field; transport,Diesel density
+energy.diesel_ghg_factor,1,kg CO2e/kg diesel,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,energy; field; transport,Diesel greenhouse-gas factor
+energy.coal_lhv_mj_kg,1,MJ/kg,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,energy,Coal lower heating value
+energy.diesel_energy_content_mj_l,1,MJ/L,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,energy; feed production; field; transport,Diesel energy content
+energy.natural_gas_lhv_mj_m3,1,MJ/m3,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,energy,Natural-gas lower heating value
+enteric.rom_npn_correction_factor,1,factor,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,enteric,Correction applied to non-protein nitrogen in residual organic matter
+enteric.diet_energy_ndf_factor_mcal_kg,1,Mcal/kg DM,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,enteric,Diet-energy factor for neutral detergent fibre
+enteric.diet_energy_starch_factor_mcal_kg,1,Mcal/kg DM,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,enteric,Diet-energy factor for starch
+enteric.diet_energy_rom_factor_mcal_kg,1,Mcal/kg DM,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,enteric,Diet-energy factor for residual organic matter
+enteric.diet_energy_fatty_acid_factor_mcal_kg,1,Mcal/kg DM,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,enteric,Diet-energy factor for fatty acids
+enteric.diet_energy_true_protein_factor_mcal_kg,1,Mcal/kg DM,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,enteric,Diet-energy factor for true protein
+enteric.diet_energy_npn_factor_mcal_kg,1,Mcal/kg DM,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,enteric,Diet-energy factor for non-protein nitrogen
+enteric.methane_energy_content_mj_kg,1,MJ/kg CH4,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,enteric,Energy content of methane
+enteric.methane_conversion_factor_pct,1,percent,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,enteric,Share of gross energy converted to methane
+characterization.gwp_ch4_100yr,1,kg CO2e/kg CH4,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,enteric; manure,Biogenic methane 100-year global warming potential
+nutrition.protein_to_nitrogen_factor,1,kg CP/kg N,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,enteric; manure,Crude-protein to nitrogen conversion factor
+field.nox_from_n2o_n_factor,1,factor,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,field,NOx-N derived per unit N2O-N
+field.n_runoff_fraction,0.1,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,field,Nitrogen runoff fraction
+field.n_leaching_fraction,0.1,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,field,Nitrogen leaching fraction applied to the residual balance
+field.p_runoff_fraction,0.1,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,field,Phosphorus runoff fraction
+field.p_leaching_fraction,0.1,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,field,Phosphorus leaching fraction applied to the residual balance
+field.urea_co2_factor,1,kg CO2/kg urea,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,field,Carbon-dioxide emission factor for urea application
+characterization.gwp_n2o_100yr,1,kg CO2e/kg N2O,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,field; transport; manure,Nitrous-oxide 100-year global warming potential
+transport.diesel_n2o_kg_per_tj,1,kg N2O/TJ,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,field; transport,Diesel-combustion nitrous-oxide factor
+transport.road_payload_t,10,t,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,Loaded road-vehicle payload
+transport.road_loaded_fuel_l_100km,1,L/100 km,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,Loaded road-vehicle fuel consumption
+transport.sea_effective_capacity_t,10,t cargo,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,Effective vessel cargo capacity
+transport.sea_speed_kn,10,kn,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,Vessel speed in nautical miles per hour
+transport.sea_load_factor,0.1,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,Main-engine load factor
+transport.sea_engine_power_kw,1,kW,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,Main-engine rated power
+transport.sea_load_power_correction_factor,1,factor,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,Externally supplied vessel load-power correction
+transport.hfo_specific_fuel_g_kwh,1,g/kWh,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,Heavy-fuel-oil specific consumption
+transport.hfo_co2_kg_t,1,kg CO2/t HFO,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,HFO carbon-dioxide factor
+transport.hfo_ch4_kg_t,1,kg CH4/t HFO,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,HFO methane factor
+transport.hfo_n2o_kg_t,1,kg N2O/t HFO,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,HFO nitrous-oxide factor
+transport.hfo_nox_kg_t,1,kg NOx/t HFO,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,HFO nitrogen-oxides factor
+transport.hfo_co_kg_t,1,kg CO/t HFO,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,HFO carbon-monoxide factor
+transport.hfo_sox_kg_t,1,kg SOx/t HFO,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,HFO sulfur-oxides factor used in acidification characterization
+characterization.gwp_ch4_fossil_100yr,1,kg CO2e/kg CH4,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,transport,Fossil methane 100-year global warming potential
+manure.volatile_solids_kg_per_1000kg_bw_day,1,kg VS/(1000 kg BW day),SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,manure,Volatile-solids excretion factor
+manure.nitrogen_retention_fraction,0.1,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,manure,Animal nitrogen-retention fraction
+manure.feces_dry_matter_fraction,0.1,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,manure,Manure faecal dry-matter fraction
+manure.feces_phosphorus_dm_fraction,0.1,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,manure,Phosphorus fraction of faecal dry matter
+manure.total_carbon_vs_ratio,1,kg C/kg VS,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,manure,Total-carbon to volatile-solids ratio
+manure.heat_generation_ghg_factor,1,kg CO2e/MJ,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,manure,Displaced heat-generation greenhouse-gas factor
+overall.fpcm_base_factor,1,kg FPCM/kg milk,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,overall,Base term in the FPCM equation
+overall.fpcm_fat_factor,1,kg FPCM/kg milk per fat fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,overall,Milk-fat term in the FPCM equation
+overall.fpcm_protein_factor,1,kg FPCM/kg milk per protein fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,overall,Milk-protein term in the FPCM equation
+characterization.ep_n_factor,1,g PO4e/g N,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,overall,Eutrophication factor for nitrogen
+characterization.ep_p_factor,1,g PO4e/g P,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,overall,Eutrophication factor for phosphorus
+characterization.ap_n_factor,1,g SO2e/g N,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,overall,Acidification factor for nitrogen
+characterization.ap_so2_factor,1,g SO2e/g SO2,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,overall,Acidification factor for sulfur dioxide equivalent mass
+field.application.synthetic_method.nh3_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic field-application NH3 fraction.
+field.application.synthetic_method.n2o_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic field-application N2O fraction.
+manure.housing.synthetic_method.ammonia_volatilization_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic housing ammonia_volatilization fraction.
+manure.housing.synthetic_method.nitrous_oxide_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic housing nitrous_oxide_emission fraction.
+manure.housing.synthetic_method.nitrogen_oxide_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic housing nitrogen_oxide_emission fraction.
+manure.housing.synthetic_method.nitrogen_leaching_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic housing nitrogen_leaching fraction.
+manure.housing.synthetic_method.nitrogen_runoff_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic housing nitrogen_runoff fraction.
+manure.housing.synthetic_method.methane_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic housing methane_emission fraction.
+manure.housing.synthetic_method.carbon_dioxide_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic housing carbon_dioxide_emission fraction.
+manure.housing.synthetic_method.phosphorus_leaching_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic housing phosphorus_leaching fraction.
+manure.housing.synthetic_method.phosphorus_runoff_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic housing phosphorus_runoff fraction.
+manure.storage_treatment.synthetic_method.ammonia_volatilization_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic storage_treatment ammonia_volatilization fraction.
+manure.storage_treatment.synthetic_method.nitrous_oxide_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic storage_treatment nitrous_oxide_emission fraction.
+manure.storage_treatment.synthetic_method.nitrogen_oxide_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic storage_treatment nitrogen_oxide_emission fraction.
+manure.storage_treatment.synthetic_method.nitrogen_leaching_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic storage_treatment nitrogen_leaching fraction.
+manure.storage_treatment.synthetic_method.nitrogen_runoff_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic storage_treatment nitrogen_runoff fraction.
+manure.storage_treatment.synthetic_method.methane_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic storage_treatment methane_emission fraction.
+manure.storage_treatment.synthetic_method.carbon_dioxide_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic storage_treatment carbon_dioxide_emission fraction.
+manure.storage_treatment.synthetic_method.phosphorus_leaching_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic storage_treatment phosphorus_leaching fraction.
+manure.storage_treatment.synthetic_method.phosphorus_runoff_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic storage_treatment phosphorus_runoff fraction.
+manure.land_application.synthetic_method.ammonia_volatilization_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic land_application ammonia_volatilization fraction.
+manure.land_application.synthetic_method.nitrous_oxide_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic land_application nitrous_oxide_emission fraction.
+manure.land_application.synthetic_method.nitrogen_oxide_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic land_application nitrogen_oxide_emission fraction.
+manure.land_application.synthetic_method.nitrogen_leaching_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic land_application nitrogen_leaching fraction.
+manure.land_application.synthetic_method.nitrogen_runoff_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic land_application nitrogen_runoff fraction.
+manure.land_application.synthetic_method.methane_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic land_application methane_emission fraction.
+manure.land_application.synthetic_method.carbon_dioxide_emission_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic land_application carbon_dioxide_emission fraction.
+manure.land_application.synthetic_method.phosphorus_leaching_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic land_application phosphorus_leaching fraction.
+manure.land_application.synthetic_method.phosphorus_runoff_fraction,0.01,fraction,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.,synthetic example,Synthetic land_application phosphorus_runoff fraction.

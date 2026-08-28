@@ -1,0 +1,18 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "dairy-lca-optimization"
+version = "0.1.0"
+description = "Generic Production-only dairy LCA calculation framework"
+readme = "README.md"
+license = { file = "LICENSE" }
+requires-python = ">=3.11"
+dependencies = []
+
+[project.scripts]
+dairy-lca = "dairy_lca.cli:main"
+
+[tool.setuptools.packages.find]
+where = ["src"]

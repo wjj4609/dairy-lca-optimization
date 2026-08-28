@@ -1,0 +1,4 @@
+synthetic,feed_id,feed_label,dry_matter_proportion_pct,net_energy_lactation_mj_per_kg_dm,crude_protein_pct_dm,ndf_pct_dm,calcium_pct_dm,phosphorus_pct_dm,forage_indicator,ghg_kg_co2e_per_kg_fresh_feed,nfp_g_n_per_kg_fresh_feed,cost_unit_per_t_fresh_feed,warning
+TRUE,synthetic_feed_a,Synthetic feed A,50,5,10,60,0.5,0.3,1,0.5,1.5,200,SYNTHETIC DEMONSTRATION ONLY - NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.
+TRUE,synthetic_feed_b,Synthetic feed B,60,8,20,20,1,0.6,0,1.5,0.5,300,SYNTHETIC DEMONSTRATION ONLY - NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.
+TRUE,synthetic_feed_c,Synthetic feed C,40,6.5,15,40,0.7,0.4,1,1,1,100,SYNTHETIC DEMONSTRATION ONLY - NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.

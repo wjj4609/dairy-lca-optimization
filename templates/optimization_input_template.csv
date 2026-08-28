@@ -1,0 +1,11 @@
+record_type,record_id,related_record_id,field_name,value,unit,required_when,null_rule,description
+model,model,,objective_direction,,id,always,blank rejected,Use minimize or maximize.
+model,model,,objective_unit,,unit text,always,blank rejected,Unit of the linear objective value.
+decision,<decision_id>,,lower_bound,,decision unit,optional,blank means no lower bound,Lower bound for the decision variable.
+decision,<decision_id>,,upper_bound,,decision unit,optional,blank means no upper bound,Upper bound for the decision variable.
+decision,<decision_id>,,objective_coefficient,,objective unit/decision unit,each decision record,blank rejected,Linear objective coefficient.
+decision,<decision_id>,,decision_unit,,unit text,each decision record,blank rejected,Unit of this decision variable.
+constraint,<constraint_id>,,lower_bound,,constraint unit,at least one constraint bound,blank means no lower bound,Lower bound for the constraint expression.
+constraint,<constraint_id>,,upper_bound,,constraint unit,at least one constraint bound,blank means no upper bound,Upper bound for the constraint expression.
+constraint,<constraint_id>,,constraint_unit,,unit text,each constraint record,blank rejected,Unit of the constraint expression.
+coefficient,<constraint_id>,<decision_id>,coefficient,,constraint unit/decision unit,each coefficient record,blank rejected,Sparse constraint-matrix coefficient; omitted pairs are zero.

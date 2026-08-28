@@ -1,0 +1,4 @@
+synthetic,constraint_id,metric,lower_bound,upper_bound,unit,warning
+true,synthetic_total_feed,annual_feed_amount,50,50,t/year,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.
+true,synthetic_crude_protein,crude_protein_fraction,0.1,0.3,fraction of DM,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.
+true,synthetic_ndf,neutral_detergent_fiber_fraction,0.1,0.5,fraction of DM,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.

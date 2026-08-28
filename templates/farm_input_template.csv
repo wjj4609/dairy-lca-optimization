@@ -1,0 +1,75 @@
+record_type,record_id,parent_record_id,field_name,value,unit,required_when,null_rule,description
+farm,farm,,farm_id,,id,always,blank rejected,Public farm identifier.
+farm,farm,,dataset_label,,id,optional,blank becomes null,Optional public dataset label.
+farm,farm,,annual_raw_milk_t_year,,t/year,always,blank rejected,Annual delivered raw milk; must be greater than zero.
+farm,farm,,milk_fat_fraction,,fraction,always,blank rejected,"Milk fat as a decimal fraction in the range [0, 1]."
+farm,farm,,milk_protein_fraction,,fraction,always,blank rejected,"Milk protein as a decimal fraction in the range [0, 1]."
+farm,farm,,average_milk_price_currency_kg,,currency/kg raw milk,always,blank rejected,Average milk price in the same currency used for cattle sales; must be greater than zero.
+cattle_sale,<sale_id>,,pricing_basis,,id,when cattle_sale record is used,all-blank exemplar is ignored,Use per_head or per_kg_live_weight.
+cattle_sale,<sale_id>,,annual_quantity_head,,head/year,"per_head, or per_kg_live_weight when total live weight is blank",blank allowed only when the conditional requirement does not apply,Annual number of cattle sold.
+cattle_sale,<sale_id>,,unit_price_currency_head,,currency/head,pricing_basis=per_head,blank otherwise,Sale price per head.
+cattle_sale,<sale_id>,,unit_price_currency_kg,,currency/kg live weight,pricing_basis=per_kg_live_weight,blank otherwise,Sale price per kilogram live weight.
+cattle_sale,<sale_id>,,average_live_weight_kg_head,,kg/head,per_kg_live_weight when total live weight is blank,blank allowed when annual total live weight is filled,Average sale live weight used to derive annual total live weight.
+cattle_sale,<sale_id>,,annual_total_live_weight_kg_year,,kg/year,optional for per_kg_live_weight,blank derives quantity multiplied by average live weight,Annual total live weight; takes precedence when filled.
+energy,energy,,electricity_kwh_year,,kWh/year,optional activity,blank becomes 0,Annual purchased or metered electricity use.
+energy,energy,,coal_t_year,,t/year,optional activity,blank becomes 0,Annual coal use.
+energy,energy,,diesel_l_year,,L/year,optional activity,blank becomes 0,Annual diesel use.
+energy,energy,,natural_gas_m3_year,,m3/year,optional activity,blank becomes 0,Annual natural-gas use.
+energy,energy,,electricity_ghg_parameter_id,,parameter id,when electricity is greater than 0,blank uses energy.electricity_ghg_factor,Parameter ID for the electricity greenhouse-gas factor.
+herd_stage,<stage_id>,,count_head,,head,each herd_stage record,blank rejected,Number of animals in the stage; whole number greater than or equal to zero.
+herd_stage,<stage_id>,,dry_matter_intake_kg_head_day,,kg DM/head/day,each herd_stage record,blank rejected,Daily dry-matter intake per head.
+herd_stage,<stage_id>,,neutral_detergent_fiber_fraction,,fraction of DM,each herd_stage record,blank rejected,Neutral detergent fibre fraction of diet dry matter.
+herd_stage,<stage_id>,,starch_fraction,,fraction of DM,each herd_stage record,blank rejected,Starch fraction of diet dry matter.
+herd_stage,<stage_id>,,fatty_acid_fraction,,fraction of DM,each herd_stage record,blank rejected,Fatty-acid fraction of diet dry matter.
+herd_stage,<stage_id>,,crude_protein_fraction,,fraction of DM,each herd_stage record,blank rejected,Crude-protein fraction of diet dry matter.
+herd_stage,<stage_id>,,non_protein_nitrogen_fraction,,fraction of DM,each herd_stage record,blank rejected,Non-protein nitrogen fraction; cannot exceed crude protein.
+herd_stage,<stage_id>,,ash_fraction,,fraction of DM,each herd_stage record,blank rejected,Ash fraction of diet dry matter.
+herd_stage,<stage_id>,,body_weight_kg,,kg/head,each herd_stage record,blank rejected,Average body weight for the stage; must be greater than zero.
+manure,manure,,annual_slurry_t_year,,t/year,always,blank rejected,Annual slurry fresh mass.
+manure,manure,,recovered_electricity_kwh_year,,kWh/year,optional recovery,blank becomes 0,Annual recovered electricity credited by the model.
+manure,manure,,recovered_heat_mj_year,,MJ/year,optional recovery,blank becomes 0,Annual recovered heat credited by the model.
+manure,manure,,electricity_credit_parameter_id,,parameter id,when recovered electricity is greater than 0,blank uses energy.electricity_ghg_factor,Parameter ID for recovered-electricity credit.
+manure_pathway,housing,,method_id,,method id,"for housing, storage_treatment, and land_application",blank rejected,Public parameter method ID for this manure pathway stage.
+manure_pathway,storage_treatment,,method_id,,method id,"for housing, storage_treatment, and land_application",blank rejected,Public parameter method ID for this manure pathway stage.
+manure_pathway,land_application,,method_id,,method id,"for housing, storage_treatment, and land_application",blank rejected,Public parameter method ID for this manure pathway stage.
+feed_production,<feed_id>,,annual_feed_use_t_year,,t/year,each feed_production record,blank rejected,Annual feed product mass used.
+feed_production,<feed_id>,,crop_requirement_factor,,t crop reference/t feed,each feed_production record,blank rejected,Positive crop-reference requirement per unit feed product.
+feed_production,<feed_id>,,cultivation_mass_fraction,,fraction,each feed_production record,blank rejected,Fraction of the crop reference mass cultivated.
+feed_production,<feed_id>,,yield_kg_ha,,kg/ha,each feed_production record,blank rejected,Crop yield; must be greater than zero.
+feed_production,<feed_id>,,allocation_fraction,,fraction,optional,blank becomes 1,Fraction of production impacts allocated to the feed product.
+feed_production,<feed_id>,,diesel_use_kg_ha,,kg/ha,optional activity,blank becomes 0,Cultivation diesel use per hectare.
+feed_production,<feed_id>,,electricity_use_kwh_ha,,kWh/ha,optional activity,blank becomes 0,Cultivation electricity use per hectare.
+agricultural_input,<input_id>,<feed_id>,rate_kg_ha,,kg/ha,when agricultural_input record is used,all-blank exemplar is ignored,Agricultural input application rate.
+agricultural_input,<input_id>,<feed_id>,ghg_factor_parameter_id,,parameter id,when agricultural_input record is used,blank rejected,Upstream GHG factor parameter ID.
+agricultural_input,<input_id>,<feed_id>,n2o_factor_parameter_id,,parameter id,when agricultural_input record is used,blank rejected,Upstream N2O factor parameter ID.
+agricultural_input,<input_id>,<feed_id>,nh3_factor_parameter_id,,parameter id,when agricultural_input record is used,blank rejected,Upstream NH3 factor parameter ID.
+agricultural_input,<input_id>,<feed_id>,phosphorus_factor_parameter_id,,parameter id,when agricultural_input record is used,blank rejected,Upstream phosphorus factor parameter ID.
+feed_field,<feed_id>,,fertilizer_application_method_id,,method id,each feed_field record,blank rejected,Public fertilizer-application method ID.
+feed_field,<feed_id>,,allocation_fraction,,fraction,optional,blank becomes 1,Fraction of field impacts allocated to the feed product.
+feed_field,<feed_id>,,seed_n_kg_year,,kg N/year,optional activity,blank becomes 0,Annual seed nitrogen input.
+feed_field,<feed_id>,,biological_fixation_n_kg_year,,kg N/year,optional activity,blank becomes 0,Annual biological nitrogen fixation.
+feed_field,<feed_id>,,atmospheric_n_kg_year,,kg N/year,optional activity,blank becomes 0,Annual atmospheric nitrogen deposition.
+feed_field,<feed_id>,,mineral_fertilizer_n_kg_year,,kg N/year,optional activity,blank becomes 0,Annual mineral-fertilizer nitrogen input.
+feed_field,<feed_id>,,manure_n_kg_year,,kg N/year,optional activity,blank becomes 0,Annual manure nitrogen input.
+feed_field,<feed_id>,,irrigation_n_kg_year,,kg N/year,optional activity,blank becomes 0,Annual irrigation nitrogen input.
+feed_field,<feed_id>,,straw_return_n_kg_year,,kg N/year,optional activity,blank becomes 0,Annual returned-straw nitrogen input.
+feed_field,<feed_id>,,seed_p_kg_year,,kg P/year,optional activity,blank becomes 0,Annual seed phosphorus input.
+feed_field,<feed_id>,,atmospheric_p_kg_year,,kg P/year,optional activity,blank becomes 0,Annual atmospheric phosphorus deposition.
+feed_field,<feed_id>,,mineral_fertilizer_p_kg_year,,kg P/year,optional activity,blank becomes 0,Annual mineral-fertilizer phosphorus input.
+feed_field,<feed_id>,,manure_p_kg_year,,kg P/year,optional activity,blank becomes 0,Annual manure phosphorus input.
+feed_field,<feed_id>,,irrigation_p_kg_year,,kg P/year,optional activity,blank becomes 0,Annual irrigation phosphorus input.
+feed_field,<feed_id>,,straw_return_p_kg_year,,kg P/year,optional activity,blank becomes 0,Annual returned-straw phosphorus input.
+feed_field,<feed_id>,,main_product_n_kg_year,,kg N/year,optional activity,blank becomes 0,Annual nitrogen removed in the main product.
+feed_field,<feed_id>,,straw_n_kg_year,,kg N/year,optional activity,blank becomes 0,Annual nitrogen removed in straw.
+feed_field,<feed_id>,,main_product_p_kg_year,,kg P/year,optional activity,blank becomes 0,Annual phosphorus removed in the main product.
+feed_field,<feed_id>,,straw_p_kg_year,,kg P/year,optional activity,blank becomes 0,Annual phosphorus removed in straw.
+feed_field,<feed_id>,,urea_equivalent_kg_year,,kg/year,optional activity,blank becomes 0,Annual urea-equivalent amount used for soil CO2.
+feed_field,<feed_id>,,diesel_kg_year,,kg/year,optional activity,blank becomes 0,Annual field diesel use.
+feed_field,<feed_id>,,electricity_kwh_year,,kWh/year,optional activity,blank becomes 0,Annual field electricity use.
+feed_field,<feed_id>,,electricity_ghg_parameter_id,,parameter id,when electricity is greater than 0,blank uses energy.electricity_ghg_factor,Parameter ID for field electricity GHG.
+transport_source,<source_id>,,feed_id,,id,each transport_source record,blank rejected,Feed ID linked to a feed_production record.
+transport_source,<source_id>,,feed_mass_t_year,,t/year,each transport_source record,blank rejected,Annual feed mass transported from this source.
+transport_source,<source_id>,,road_distance_km,,km one way,each transport_source record,blank rejected,Loaded one-way road distance.
+transport_source,<source_id>,,sea_distance_nmi,,nautical mile one way,when a sea leg is used,all sea fields blank means no sea leg,One-way sea distance.
+transport_source,<source_id>,,sea_cargo_mass_t_year,,t/year,when a sea leg is used,all sea fields blank means no sea leg,Annual cargo mass used to determine voyages.
+transport_source,<source_id>,,sea_emission_allocation_fraction,,fraction,optional when a sea leg is used,blank becomes 1 for a sea leg,Fraction of sea emissions allocated to this feed source.

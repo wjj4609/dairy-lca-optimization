@@ -1,0 +1,2 @@
+synthetic,group_id,stage_id,dmi_min_kg_day,dmi_max_kg_day,nel_min_mj_per_kg_dm,nel_max_mj_per_kg_dm,crude_protein_min_pct_dm,crude_protein_max_pct_dm,ndf_min_pct_dm,ndf_max_pct_dm,calcium_min_pct_dm,calcium_max_pct_dm,phosphorus_min_pct_dm,phosphorus_max_pct_dm,forage_min_pct_dm,forage_max_pct_dm,warning
+FALSE,REPLACE_group_id,REPLACE_stage_id,,,,,,,,,,,,,,,Replace every placeholder and blank field before running the optimizer.

@@ -1,0 +1,4 @@
+synthetic,parameter_id,distribution,mean,sd,cv,lower_bound,upper_bound,unit,source_note,warning
+true,energy.electricity_ghg_factor,normal,1,,0.1,0.7,1.3,kg CO2e/kWh,Invented software-demonstration distribution; no study value or publication range.,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.
+true,enteric.methane_conversion_factor_pct,normal,1,0.15,,0.5,1.5,percent,Invented software-demonstration distribution; no study value or publication range.,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.
+true,manure.housing.synthetic_method.ammonia_volatilization_fraction,uniform,,,,0.005,0.015,fraction,Invented software-demonstration distribution; no study value or publication range.,SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.

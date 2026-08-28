@@ -1,0 +1,32 @@
+# Private inputs and study artifacts
+private/
+raw_data/
+outputs/
+*.xlsx
+*.xls
+*.xlsm
+*.RData
+*.Rhistory
+
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.coverage
+htmlcov/
+.venv/
+venv/
+dist/
+build/
+*.egg-info/
+
+# R
+.Rproj.user/
+renv/library/
+renv/staging/
+
+# Editors and operating systems
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db

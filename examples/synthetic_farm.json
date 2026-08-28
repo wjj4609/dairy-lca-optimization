@@ -1,0 +1,183 @@
+{
+  "schema_version": "1.0",
+  "synthetic": true,
+  "warning": "SYNTHETIC DEMONSTRATION ONLY — NOT FOR RESEARCH USE OR SCIENTIFIC INTERPRETATION.",
+  "records": [
+    {
+      "record_type": "farm",
+      "record_id": "farm",
+      "values": {
+        "farm_id": "synthetic_farm_001",
+        "dataset_label": "synthetic_example_v1",
+        "annual_raw_milk_t_year": 100,
+        "milk_fat_fraction": 0.04,
+        "milk_protein_fraction": 0.03,
+        "average_milk_price_currency_kg": 1
+      }
+    },
+    {
+      "record_type": "cattle_sale",
+      "record_id": "synthetic_sale_001",
+      "values": {
+        "pricing_basis": "per_head",
+        "annual_quantity_head": 2,
+        "unit_price_currency_head": 5
+      }
+    },
+    {
+      "record_type": "energy",
+      "record_id": "energy",
+      "values": {
+        "electricity_kwh_year": 100,
+        "coal_t_year": 1,
+        "diesel_l_year": 10,
+        "natural_gas_m3_year": 5,
+        "electricity_ghg_parameter_id": "energy.electricity_ghg_factor"
+      }
+    },
+    {
+      "record_type": "herd_stage",
+      "record_id": "synthetic_stage_001",
+      "values": {
+        "count_head": 10,
+        "dry_matter_intake_kg_head_day": 20,
+        "neutral_detergent_fiber_fraction": 0.30,
+        "starch_fraction": 0.20,
+        "fatty_acid_fraction": 0.03,
+        "crude_protein_fraction": 0.16,
+        "non_protein_nitrogen_fraction": 0.01,
+        "ash_fraction": 0.08,
+        "body_weight_kg": 600
+      }
+    },
+    {
+      "record_type": "manure",
+      "record_id": "manure",
+      "values": {
+        "annual_slurry_t_year": 100,
+        "recovered_electricity_kwh_year": 0,
+        "recovered_heat_mj_year": 0,
+        "electricity_credit_parameter_id": "energy.electricity_ghg_factor"
+      }
+    },
+    {
+      "record_type": "manure_pathway",
+      "record_id": "housing",
+      "values": {
+        "method_id": "synthetic_method"
+      }
+    },
+    {
+      "record_type": "manure_pathway",
+      "record_id": "storage_treatment",
+      "values": {
+        "method_id": "synthetic_method"
+      }
+    },
+    {
+      "record_type": "manure_pathway",
+      "record_id": "land_application",
+      "values": {
+        "method_id": "synthetic_method"
+      }
+    },
+    {
+      "record_type": "feed_production",
+      "record_id": "synthetic_feed_a",
+      "values": {
+        "annual_feed_use_t_year": 30,
+        "crop_requirement_factor": 1,
+        "cultivation_mass_fraction": 0.50,
+        "yield_kg_ha": 10000,
+        "allocation_fraction": 1,
+        "diesel_use_kg_ha": 1,
+        "electricity_use_kwh_ha": 2
+      }
+    },
+    {
+      "record_type": "feed_production",
+      "record_id": "synthetic_feed_b",
+      "values": {
+        "annual_feed_use_t_year": 20,
+        "crop_requirement_factor": 1.20,
+        "cultivation_mass_fraction": 0.40,
+        "yield_kg_ha": 8000,
+        "allocation_fraction": 1,
+        "diesel_use_kg_ha": 1,
+        "electricity_use_kwh_ha": 2
+      }
+    },
+    {
+      "record_type": "feed_field",
+      "record_id": "synthetic_feed_a",
+      "values": {
+        "fertilizer_application_method_id": "synthetic_method",
+        "allocation_fraction": 1,
+        "seed_n_kg_year": 1,
+        "biological_fixation_n_kg_year": 2,
+        "atmospheric_n_kg_year": 1,
+        "mineral_fertilizer_n_kg_year": 10,
+        "manure_n_kg_year": 5,
+        "straw_return_n_kg_year": 1,
+        "seed_p_kg_year": 0.20,
+        "atmospheric_p_kg_year": 0.10,
+        "mineral_fertilizer_p_kg_year": 2,
+        "manure_p_kg_year": 1,
+        "straw_return_p_kg_year": 0.20,
+        "main_product_n_kg_year": 8,
+        "straw_n_kg_year": 2,
+        "main_product_p_kg_year": 1,
+        "straw_p_kg_year": 0.50,
+        "urea_equivalent_kg_year": 10,
+        "diesel_kg_year": 5,
+        "electricity_kwh_year": 20,
+        "electricity_ghg_parameter_id": "energy.electricity_ghg_factor"
+      }
+    },
+    {
+      "record_type": "feed_field",
+      "record_id": "synthetic_feed_b",
+      "values": {
+        "fertilizer_application_method_id": "synthetic_method",
+        "allocation_fraction": 1,
+        "seed_n_kg_year": 1,
+        "biological_fixation_n_kg_year": 1,
+        "atmospheric_n_kg_year": 1,
+        "mineral_fertilizer_n_kg_year": 8,
+        "manure_n_kg_year": 4,
+        "straw_return_n_kg_year": 1,
+        "seed_p_kg_year": 0.10,
+        "atmospheric_p_kg_year": 0.10,
+        "mineral_fertilizer_p_kg_year": 1.50,
+        "manure_p_kg_year": 0.80,
+        "straw_return_p_kg_year": 0.10,
+        "main_product_n_kg_year": 6,
+        "straw_n_kg_year": 2,
+        "main_product_p_kg_year": 0.80,
+        "straw_p_kg_year": 0.40,
+        "urea_equivalent_kg_year": 8,
+        "diesel_kg_year": 4,
+        "electricity_kwh_year": 15,
+        "electricity_ghg_parameter_id": "energy.electricity_ghg_factor"
+      }
+    },
+    {
+      "record_type": "transport_source",
+      "record_id": "synthetic_source_a",
+      "values": {
+        "feed_id": "synthetic_feed_a",
+        "feed_mass_t_year": 30,
+        "road_distance_km": 20
+      }
+    },
+    {
+      "record_type": "transport_source",
+      "record_id": "synthetic_source_b",
+      "values": {
+        "feed_id": "synthetic_feed_b",
+        "feed_mass_t_year": 20,
+        "road_distance_km": 10
+      }
+    }
+  ]
+}
